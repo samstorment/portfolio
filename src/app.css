@@ -34,8 +34,21 @@ main {
 a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 p {
     line-height: 150%;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
 }

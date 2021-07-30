@@ -1,0 +1,17 @@
+#sidebar {
+    max-width: 275px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.article-title {
+    border-top: 1px solid gray;
+    border-bottom: 2px solid black;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    font-size: large;
+}
