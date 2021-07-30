@@ -1,0 +1,16 @@
+footer {
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-button {
+    border: none;
+    background-color: transparent;
+}
+
+.footer-button:hover {
+    text-decoration: underline;
+}

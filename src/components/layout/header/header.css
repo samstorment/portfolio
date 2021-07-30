@@ -1,10 +1,5 @@
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #title-container {
+    /* space-between flex for the "box - title - box" layout */
     display: flex;
     justify-content: space-between;
 }
@@ -15,7 +10,7 @@ header {
     justify-content: center;
     border: 1px solid black;
     max-width: 140px;
-    text-align: center;
+    /* removing max width shows how this flex: 1 works */
     flex: 1;
 }
 
@@ -31,6 +26,7 @@ header {
 #title {
     font-family: 'ChomskyRegular', 'Times New Roman', Times, serif;
     margin: 0px 20px;
+    /* aligns text center when title is broken into 2 lines */
     text-align: center;
     font-size: 76px;
 }
@@ -52,25 +48,22 @@ header nav {
     margin: 5px 0px;
 }
 
-a {
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 @media (max-width: 800px) {
+
+    /* remove the boxes under 800px */
    .header-box {
        display: none;
     }
 
+    /* center the title since space between leaves it on the left as its the only flex item */
     #title-container {
        justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
+
+    /* shrink font sizes and make text hug itself a bit. looks good when title overflows to 2 lines */
     #title {
         font-size: 64px;
         line-height: 75%;

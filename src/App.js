@@ -1,13 +1,25 @@
 import './app.css';
-import { Header } from "./header/Header";
-import { Home } from "./home/Home";
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Home } from "./components/home/Home";
+import { Footer } from './components/layout/footer/Footer';
+import { Header } from "./components/layout/header/Header";
+import { FourOFour } from './components/FourOFour/FourOFour';
+import { Contact } from './components/contact/Contact';
+import { Resume } from './components/resume/Resume';
 
 export const App = () => {
 	return <div id="app">
-		<Header/>
-		<main>
-			<Home />
-		</main>
-		<footer style={{padding: '20px', border: '1px solid black'}}>footer</footer>
+		<Router>
+			<Header />
+			<main>
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route exact path="/contact" component={Contact} />
+						<Route exact path="/resume" component={Resume} />
+						<Route path="/" component={FourOFour} />
+					</Switch>
+			</main>
+			<Footer />
+		</Router>
 	</div>
 }

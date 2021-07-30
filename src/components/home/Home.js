@@ -1,21 +1,14 @@
+import { Headline } from '../reusable/headline/Headline';
 import './home.css';
 import photo from './sadGif.gif';
+import { Sidebar } from './sidebar/Sidebar';
 import tony from './tony.jpg';
 
 export const Home = () => {
-    return <div>
-        <h2 id="headline">LOCAL MAN SHOWCASES MARKETABLE SKILLS</h2>
+    return <div id="homepage">
+        <Headline>LOCAL MAN SHOWCASES MARKETABLE SKILLS</Headline>
         <div id="content-container">
-            <aside id="sidebar">
-                <article className="sidebar-article">
-                    <h4 className="article-title">A Bit About Me</h4>
-                    <p>Hi, my name is Sam Storment. I'm a recent computer science graduate seeking a full time web developer position. I've worked with lots of stuff in the past, but my favorite is React, Node.js, Express, and MySQL. When I'm not programming, I'm watching baseball, playing some videogames, taking my dog for a well deserved walk, or hanging out with my friends. </p>
-                </article>
-                <article className="sidebar-article">
-                    <h4 className="article-title">My Skills</h4>
-                    <p>I feel pretty darn confident with JavaScript, HTML, CSS, React, and Node.js. The standard web dev stuff. I've got some experience with C#, Java, Python, and C++ thanks to some school projects. Git and GitHub are my go to for version control.</p>
-                </article>
-            </aside>
+            <Sidebar />
             <div id="projects">
                 <h3 className="sub-heading">Some of My Projects</h3>
                 <article className="project-article">
@@ -41,9 +34,5 @@ export const Home = () => {
                 </article>
             </div>
         </div>
-        {/* <div id="img-container">
-            <img src={photo} alt="Albert" />
-            <p>A Little Bit About Myself </p>
-        </div> */}
     </div>
 }

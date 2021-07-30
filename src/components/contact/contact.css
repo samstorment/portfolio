@@ -1,0 +1,14 @@
+#contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+#contact-information ul {
+    flex: 1;
+    max-width: 400px;
+    list-style-type: none;
+    text-align: center;
+    line-height: 150%;
+}
