@@ -1,4 +1,4 @@
-import { useHistory, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import "./footer.css";
 
 
@@ -13,18 +13,14 @@ export const Footer = () => {
             window.scrollTo({
                 top: 0, left: 0, behavior: 'smooth'
             });
-
-            console.log('wow');
-
         } else {
             history.push('/');
-
-            console.log('wow');
         }
 
     }
 
     return <footer>
         <button className="footer-button" onClick={scrollTop}>2021 Sam Storment</button>
+        <Link to="/contact">contact</Link>
     </footer>
 }

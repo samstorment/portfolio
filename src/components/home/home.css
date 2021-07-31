@@ -7,11 +7,6 @@
     display: flex;
 }
 
-#projects {
-    /* background-color: antiquewhite; */
-    flex: 1;
-}
-
 @media (max-width: 800px) {
     #content-container {
         display: inline-block;

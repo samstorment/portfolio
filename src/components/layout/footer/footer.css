@@ -3,7 +3,7 @@ footer {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .footer-button {
