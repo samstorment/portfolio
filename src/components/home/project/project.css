@@ -1,0 +1,28 @@
+.project-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-image {
+    padding: 5px;
+    max-width: 100%;
+}
+
+.project-tools {
+    font-weight: bolder;
+    margin: 5px 0px;
+}
+
+.project-button-container {
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.project-button {
+    border-radius: 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+}
