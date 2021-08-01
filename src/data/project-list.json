@@ -4,15 +4,15 @@
         "image": "/images/thumbnails/sadGif.gif",
         "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
         "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
-        "link": "/send-a-demo",
+        "id": "send-a-demo",
         "github": "https://github.com/thomasjonesmc/send-a-demo"
     },
     {
-        "title": "Tony the Tiger Mobile Game for Kids and Cereal Fans",
+        "title": "AB Form Senior Project",
         "image": "/images/thumbnails/tony.jpg",
         "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
         "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
-        "link": "/tony",
+        "id": "tony",
         "github": "https://github.com/thomasjonesmc/send-a-demo"
     }
 ]

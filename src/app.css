@@ -10,6 +10,7 @@
 /* Make browser height, body child, and root child full browser height */
 html, body, #root {
     height: 100%;
+    /* background-color: rgb(73, 73, 78); */
 }
 
 /* Make the app full browser height and a vertical flex container */

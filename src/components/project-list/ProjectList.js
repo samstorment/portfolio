@@ -1,4 +1,4 @@
-import { Project } from "components/home/project/Project";
+import { ProjectHome } from "components/home/project-home/ProjectHome";
 import { Headline } from "components/reusable/headline/Headline";
 import projects from 'data/project-list.json';
 import { useLocation } from "react-router-dom";
@@ -15,13 +15,13 @@ export const ProjectList = () => {
         }
 
         {projects.map(p => (
-            <Project
-                key={p.title}
+            <ProjectHome
+                key={p.id}
                 title={p.title}
                 image={p.image}
                 description={p.description}
                 tools={p.tools}
-                link={p.link}
+                id={p.id}
                 github={p.github}
             />
         ))}
