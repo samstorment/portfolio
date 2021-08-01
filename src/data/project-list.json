@@ -1,18 +1,26 @@
 [
     {
+        "title": "AB Form Senior Project",
+        "image": "/images/projects/abform/thumbnail.gif",
+        "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
+        "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
+        "id": "abform",
+        "github": "https://github.com/abform/abform"
+    },
+    {
         "title": "Send a Demo",
-        "image": "/images/thumbnails/sadGif.gif",
+        "image": "/images/projects/sad/thumbnail.gif",
         "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
         "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
         "id": "send-a-demo",
         "github": "https://github.com/thomasjonesmc/send-a-demo"
     },
     {
-        "title": "AB Form Senior Project",
-        "image": "/images/thumbnails/tony.jpg",
+        "title": "Elecdrawn",
+        "image": "/images/projects/elecdrawn/thumbnail.gif",
         "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
         "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
-        "id": "tony",
+        "id": "send-a-demo",
         "github": "https://github.com/thomasjonesmc/send-a-demo"
     }
 ]
