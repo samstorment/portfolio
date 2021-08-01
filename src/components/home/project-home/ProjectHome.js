@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import './project.css';
+import './project-home.css';
 
-export const Project = ({title, image, description, tools, link, github}) => {
+export const ProjectHome = ({title, image, description, tools, id, github}) => {
+        
     return  <article>
         <h4 className="article-title">{title}</h4>
         <div className="project-image-container">
@@ -10,7 +11,7 @@ export const Project = ({title, image, description, tools, link, github}) => {
         <p>{description}</p>
         <p className="project-tools">{tools}</p>
         <div className="project-button-container">
-            <Link to={link} className="project-button">See More</Link>
+            <Link to={`/projects/${id}`} className="project-button">See More</Link>
             <a href={github} className="project-button" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
     </article>

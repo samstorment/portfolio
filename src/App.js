@@ -7,6 +7,7 @@ import { FourOFour } from './components/FourOFour/FourOFour';
 import { Contact } from './components/contact/Contact';
 import { Resume } from './components/resume/Resume';
 import { ProjectList } from 'components/project-list/ProjectList';
+import { Project } from 'components/project/Project';
 
 export const App = () => {
 	return <div id="app">
@@ -18,6 +19,7 @@ export const App = () => {
 						<Route exact path="/contact" component={Contact} />
 						<Route exact path="/resume" component={Resume} />
 						<Route exact path="/projects" component={ProjectList} />
+						<Route exact path="/projects/:projectName" component={Project} />
 						<Route path="/" component={FourOFour} />
 					</Switch>
 			</main>
