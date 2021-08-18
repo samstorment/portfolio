@@ -10,7 +10,7 @@ export const ProjectHome = ({title, thumbnail, description, tools, id, github, w
         </div>
         <p>{description}</p>
         <p className="project-tools">{tools}</p>
-        <div className="project-button-container">
+        <div className="project-home-button-container">
             <Link to={`/projects/${id}`} className="project-button">See More</Link>
             {github &&<a href={github} className="project-button" target="_blank" rel="noopener noreferrer">GitHub</a>}
             {website && <a href={website} className="project-button" target="_blank" rel="noopener noreferrer">Live Demo</a>}
