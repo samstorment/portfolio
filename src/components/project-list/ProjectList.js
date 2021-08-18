@@ -18,11 +18,12 @@ export const ProjectList = () => {
             <ProjectHome
                 key={p.id}
                 title={p.title}
-                image={p.image}
+                thumbnail={p.thumbnail}
                 description={p.description}
                 tools={p.tools}
                 id={p.id}
                 github={p.github}
+                website={p.website}
             />
         ))}
     </div>

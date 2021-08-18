@@ -12,6 +12,14 @@
 .project-tools {
     font-weight: bolder;
     margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-tools > span {
+    border: 1px solid gray;
+    padding: 5px;
+
 }
 
 .project-button-container {

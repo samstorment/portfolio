@@ -1,26 +1,33 @@
 [
     {
-        "title": "AB Form Senior Project",
-        "image": "/images/projects/abform/thumbnail.gif",
-        "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
-        "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
-        "id": "abform",
-        "github": "https://github.com/abform/abform"
+        "title": "Elecdrawn",
+        "thumbnail": "/images/projects/elecdrawn/thumbnail.gif",
+        "description": "Elecdrawn is a JavaScript drawing application with various tools for drawing to the HTML Canvas. It was originally built as an Electron desktop application, hence the name, but I switched it over to the web to make it more accessible.",
+        "tools": "JavaScript, HTML, CSS, Canvas API",
+        "id": "elecdrawn",
+        "github": "https://github.com/samstorment/elecdrawn-web",
+        "website":  "https://elecdrawn-web.vercel.app/",
+        "images": [
+            {
+                "title": "Brush",
+                "path": "/images/projects/elecdrawn/thumbnail.gif",
+                "description": "The most basic drawing tool. Starts painting on the mouse down event and keeps painting while the mouse is moving. Finishes on the mouse up event. Every drawing tool follows this same pattern which makes for some really great polymorphic behavior."
+            }
+        ]
     },
     {
         "title": "Send a Demo",
-        "image": "/images/projects/sad/thumbnail.gif",
-        "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
-        "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
+        "thumbnail": "/images/projects/sad/thumbnail.gif",
+        "description": "Send a demo is a web app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
+        "tools": "React, Node.js, Express, MongoDB, AWS S3, CSS, HTML",
         "id": "send-a-demo",
         "github": "https://github.com/thomasjonesmc/send-a-demo"
     },
     {
-        "title": "Elecdrawn",
-        "image": "/images/projects/elecdrawn/thumbnail.gif",
-        "description": "Send a demo is an app made for recording and uploading audio to share with your friends. I worked with a friend over the course of a couple months adding various features, fixing bugs, and collaborating regularly.",
-        "tools": "Built with React, CSS, HTML, Node.js, Express, MongoDB",
-        "id": "send-a-demo",
-        "github": "https://github.com/thomasjonesmc/send-a-demo"
+        "title": "AB Form Senior Project",
+        "thumbnail": "/images/projects/abform/thumbnail.gif",
+        "description": "The AB Form project was my final senior project at SIUE. It took place over two full semesters in a team of three. We converted the Academic Scheduling Department's paper based schedule-change request forms to a web format.",
+        "tools": "React, Node.js, Express, MySQL, CSS, HTML",
+        "id": "abform"
     }
 ]
