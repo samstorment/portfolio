@@ -4,6 +4,6 @@ import pdf from "./resume.pdf";
 export const Resume = () => {
     return <div>
         <Headline>RESUME</Headline>
-        <iframe src={`${pdf}#zoom=FitW`} width="100%" height="1200px" title="resume"></iframe>
+        <iframe src={`${pdf}`} width="100%" height="1200px" title="resume"></iframe>
     </div>
 }
