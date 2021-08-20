@@ -12,7 +12,9 @@ export const Header = () => {
 const Title = () => {
     return <div id="title-container">
         <Link to="/" className="header-box" id="left-header-box">Home</Link>
-        <h1 id="title">Sam Storment</h1>
+        <Link to="/">
+            <h1 id="title">Sam Storment</h1>
+        </Link>
         <Link to="/contact" className="header-box" id="right-header-box">Contact</Link>
     </div>
 }

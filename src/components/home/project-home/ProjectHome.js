@@ -5,8 +5,8 @@ export const ProjectHome = ({title, thumbnail, description, tools, id, github, w
         
     return  <article>
         <h4 className="article-title">{title}</h4>
-        <div className="project-image-container">
-            <img className="project-image" src={thumbnail} alt={title} />
+        <div className="project-media-container">
+            <img className="project-media" src={thumbnail} alt={title} />
         </div>
         <p>{description}</p>
         <p className="project-tools">{tools}</p>

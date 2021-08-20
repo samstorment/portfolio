@@ -5,3 +5,13 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+
+.project-media-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-media {
+    padding: 5px;
+    max-height: 400px;
+}
