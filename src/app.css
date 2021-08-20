@@ -30,6 +30,7 @@ html, body, #root {
 /* make the main section fill all height down to the footer */
 main {
     flex: 1;
+    height: 100%;
 }
 
 a {
@@ -52,4 +53,8 @@ button {
 
 address {
     font-style: normal;
+}
+
+video, img {
+    max-width: 100%;
 }

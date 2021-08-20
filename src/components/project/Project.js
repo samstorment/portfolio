@@ -26,14 +26,17 @@ export const Project = () => {
             {project.github && <a href={project.github} className="project-button" target="_blank" rel="noopener noreferrer">GitHub</a>}
             {project.website && <a href={project.website} className="project-button" target="_blank" rel="noopener noreferrer">Live Demo</a>}
         </div>}
-        {project.images && project.images.map(img => {
-            return <>
-                <h4 className="article-title">{img.title}</h4>
-                <div className="project-image-container">
-                    <img className="project-image" src={img.path} alt={img.title} />
+        {project.media && project.media.map(med => {
+            return <section key={med.title}>
+                <h4 className="article-title">{med.title}</h4>
+                <div className="project-media-container">
+                    {med.type.includes("video") 
+                        ? <video controls><source src={med.path} alt={med.title} /></video>
+                        : <img className="project-media" src={med.path} alt={med.title} />
+                    }
                 </div>
-                <p style={{margin: "5px 0px 20px 0px"}}>{img.description}</p>
-            </>
+                <p style={{margin: "5px 0px 20px 0px"}}>{med.description}</p>
+            </section>
         })}
     </article>
 }
