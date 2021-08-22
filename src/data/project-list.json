@@ -12,7 +12,7 @@
                 "title": "Brush Fill, Brush, and Line",
                 "path": "/media/projects/elecdrawn/brush-fill-line.gif",
                 "type": "image/gif",
-                "description": "Some of the most basic drawing tools. Each one starts painting as the user clicks their mouse down and keeps painting while the mouse is moving. The painting ends when the mouse comes up anywhere on the window. Every drawing tool follows this same pattern which makes for some really great polymorphic behavior."
+                "description": "These are some of the most basic drawing tools. Each one starts painting as the user clicks their mouse down and keeps painting while the mouse is moving. The painting ends when the mouse comes up anywhere on the window. Every drawing tool follows this same pattern which makes for some really great polymorphic behavior."
             },
             {
                 "title": "Rectangle and Ellipse",
@@ -24,19 +24,19 @@
                 "title": "Polygon",
                 "path": "/media/projects/elecdrawn/polygon.gif",
                 "type": "image/gif",
-                "description": "The polygon tool can draws regular polygons with any number of sides. I capped it at 20 sides because regular polygons trend towards a perfect circle as the number of sides increase. Working out how to draw these was a bit of fun geometry. The first vertex of the polygon is placed at the user's mouse position and every other vertex is rotated relative to the first."
+                "description": "The polygon tool can draw regular polygons with any number of sides. I capped it at 20 sides because regular polygons trend towards a perfect circle as the number of sides increase. Working out how to draw these made for some fun geometry. The first vertex of the polygon is placed at the user's mouse position and every other vertex is rotated relative to the first."
             },
             {
                 "title": "Select",
                 "path": "/media/projects/elecdrawn/select.gif",
                 "type": "image/gif",
-                "description": "The select tool is one of the more interesting and useful tools. It works by drawing a rectangle onto the canvas and placing the image data inside that rectangle into an invisible canvas layer. The main canvas is cleared inside that rectangular area, then we're free to drag the invisible layer without distrubing the main canvas. When the user releases their mouse, the invisible layer is drawn back to the main canvas layer. After the select rectangle is drawn the user's mouse is tracked to see if they click inside one of the scaling anchors. If they do, the scaled image is continually redrawn on the invisible layer and only moved to the main layer on mouse up."
+                "description": "The select tool is one of the more interesting and useful tools. It works by drawing a rectangle onto the canvas and placing the image data inside that rectangle into an invisible canvas layer. The main canvas is cleared inside that rectangular area, then we're free to drag the invisible layer without distrubing the main canvas. When the user releases their mouse, the invisible layer is drawn back to the main canvas layer."
             },
             {
                 "title": "Lasso",
                 "path": "/media/projects/elecdrawn/lasso.gif",
                 "type": "image/gif",
-                "description": "The lasso tool was the most difficult drawing tool to create. It works like the select tool in the sense that it lets you select an area and move it, but it is not limited to a rectangular shape. This is achieved by storing all the user's mouse coordinates as they draw the lasso, then clipping the canvas based on those points. We then follow the same pattern as the select tool where we move the clipped image to an invisible layer to drag it around before drawing it back to the main canvas on mouse up."
+                "description": "The lasso tool was the most difficult drawing tool to create. It works like the select tool in the sense that it lets you select an area and move it, but it is not limited to a rectangular shape. This is achieved by storing all the user's mouse coordinates as they draw the lasso, then clipping the canvas based on those points so only the lassoed area is active. The lasso follows the same pattern as the select tool where the clipped image is drawn to an invisible layer to drag it around before drawing it back to the main canvas on mouse up."
             },
             {
                 "title": "Bucket",
@@ -48,7 +48,7 @@
                 "title": "Mirror",
                 "path": "/media/projects/elecdrawn/mirror.gif",
                 "type": "image/gif",
-                "description": "I saved the best for last. The mirror tool follows your mouse cursor to draw identical circles in sectors. This tool is my favorite to use and look at, but it was pretty easy to make. It uses a polygon as the base and just draws circles wherever the polygon vertices would be. I especially like combining this tool with some of the compositing options, but performance can drop pretty quickly with some of them."
+                "description": "I saved the best for last. The mirror tool follows your mouse cursor to draw identical circles in sectors. This tool is my favorite to use and look at, but it was pretty easy to make. It uses a polygon as the base and just draws circles wherever the polygon vertices would be. I especially like combining this tool with some of the compositing options, but performance can drop pretty quickly when combining many circles with compositing."
             }
         ]
     },
@@ -59,6 +59,7 @@
         "tools": "React, Node.js, Express, MongoDB, AWS S3, CSS, HTML",
         "id": "send-a-demo",
         "github": "https://github.com/thomasjonesmc/send-a-demo",
+        "website":  "https://www.sendademo.com",
         "media": [
             {
                 "title": "Home",
@@ -76,7 +77,7 @@
                 "title": "Demos",
                 "path": "/media/projects/sad/demos.png",
                 "type": "image/png",
-                "description": "The Demos page lets users see all of their demos and create new demos. Each demo can be edited to add contributors, change the title, change the public status, or it can be deleted. Demos that you contribute to but did not author do not grant you access to those customization options."
+                "description": "The demos page lets users see all of their demos and create new demos. Each demo can be edited to add contributors, change the title, change the public status, or delete the demo. Demos that you contribute to but did not author do not grant you access to those customization options."
             },
             {
                 "title": "Tracks",
@@ -95,7 +96,7 @@
     {
         "title": "AB Form Senior Project",
         "thumbnail": "/media/projects/abform/thumbnail.gif",
-        "description": "The AB Form project was my final senior project at SIUE. It took place over two full semesters in a team of three. We converted the Academic Scheduling Department's paper based schedule-change request forms to a web format.",
+        "description": "The AB Form project was my final senior project at SIUE. It took place over two full semesters in a team of three. We converted the Academic Scheduling Department's paper based schedule-change request form to a web application.",
         "tools": "React, Formik, Node.js, Express, MySQL, CSS, HTML",
         "id": "abform",
         "media": [
@@ -103,7 +104,7 @@
                 "title": "Original AB Form Description",
                 "path": "/media/projects/abform/abform.jpg",
                 "type": "image/jpg",
-                "description": "This is the original AB Form that my senior project team of 3 was redesigned for the Academic Scheduling department at SIUE. The form is used by departments at SIUE to make course change requests to the Academic Scheduling department. It is a paper form with several fields related to who is filling out the form and the class that they want to change. We used React, Formik, Node.js, Express, and MySQL to convert this to a web application. Users logged into the application with their preexisting SIUE credentials thanks to SIUE's Central Authetication Service."
+                "description": "This is the original AB Form that my senior project team of 3 redesigned for the Academic Scheduling department at SIUE. The form is used by departments at SIUE to make course change requests to the Academic Scheduling department. It is a paper form with several fields related to who is filling out the form and the class that they want to change. We used React, Formik, Node.js, Express, and MySQL to convert this to a web application. Users log into the application with their preexisting SIUE credentials thanks to SIUE's Central Authetication Service."
             },
             {
                 "title": "Making a Request",
@@ -127,7 +128,7 @@
                 "title": "Request Approval",
                 "path": "/media/projects/abform/approval-screen.png",
                 "type": "image/jpg",
-                "description": "After clicking on a request in the inbox, this is the screen that is seen by the users who approve course change requests. It lays out all of the course info so that Chair, Deans, and Academic Scheduling can validate it. This page has \"Approve\" and \"Reject\" buttons to approve or reject the request. If approved, the request moves to the next approver until Academic Scheduling gives the final approval and the request is successful."
+                "description": "After clicking on a request in the inbox, this is the screen that is seen by the users who approve course change requests. It lays out all of the course info so that Department Chairs, Deans, and Academic Scheduling can validate it. This page has \"Approve\" and \"Reject\" buttons to approve or reject the request. If approved, the request moves to the next approver until Academic Scheduling gives the final approval and the request is successful."
             },
             {
                 "title": "Data Management",

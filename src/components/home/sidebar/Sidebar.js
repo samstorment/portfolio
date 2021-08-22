@@ -9,7 +9,7 @@ export const Sidebar = () => {
 
         <article className="article">
             <h4 className="article-title">My Skills</h4>
-            <p>I feel really confident with JavaScript, HTML, CSS, React, and Node.js. For databases, SQL is my go to, with MySQL being the one I've used most. I've used MongoDB a bit as well. I've got some experience with C#, Java, Python, and C++ thanks to some school projects. I've briefly dabbled with other technologies like GoLang, Haskell, Svelte, and Rust in my personal time. I used Git and GitHub for version control.</p>
+            <p>I feel really confident with JavaScript, HTML, CSS, React, and Node.js. For databases, SQL is my go to, with MySQL being the one I've used most. I've used MongoDB a bit as well. I've got some experience with C#, Java, Python, and C++ thanks to some school projects. I've briefly dabbled with other technologies like GoLang, Haskell, Svelte, and Rust in my personal time. I use Git and GitHub for version control.</p>
         </article>
     </aside>
 }
